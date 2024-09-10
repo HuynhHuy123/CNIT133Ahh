@@ -84,7 +84,6 @@
         <p>Is it possible to have multiple trigger types in HTMX? Yes, you can use multiple triggers to initiate an HTMX request. Here’s an example of how you would configure a form element to trigger a POST request both on `change` and `load` events, displaying the response in an element with the id `result`.</p>
         
         <!-- Form wrapping the select element for HTMX -->
-        <form id="city-form" hx-post="/api/search" hx-trigger="change load" hx-target="#result">
             <select name="city" id="city">
                 <option value="San Francisco">San Francisco</option>
                 <option value="New York">New York</option>
